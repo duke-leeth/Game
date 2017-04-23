@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-public class GameTester {
+public class Game1Tester {
   public static void main(String[] args) throws Exception {
-    Game game = new Game();
+    Game1 game = new Game1();
     try {
-      game.setBoundry(8);
+      game.setBoundry(2);
       game.setInitialLocation(2, 3);
       game.setInitialDirection("N");
 

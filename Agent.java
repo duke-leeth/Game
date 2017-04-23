@@ -11,6 +11,10 @@ public class Agent{
     return location.getCoordinateStringFormat();
   }
 
+  public int[] getLocationArrayFormat() {
+    return location.getCoordinateArrayFormat();
+  }
+
   public String getDirection() {
     return direction;
   }
