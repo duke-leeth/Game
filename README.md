@@ -2,18 +2,19 @@ Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
 
-1.Usage command:
+##1.Command usage:
+Two methods are listed in the following.
 
   Method 1:
     Execute  execute .jar file:
-      java -jar GameProblem.jar <option>
+      'java -jar GameProblem.jar <option>'
 
   Method 2:
     Compile:
-      javac GameProblem.java
+      'javac GameProblem.java'
 
     Execute method 2:
-      java GameProblem <option>
+      'java GameProblem <option>'
 
   Command arguments:
       <option>  1 : for game version 1
@@ -32,7 +33,7 @@ Date: Apr 23 2017
         ex. Maximum actions allowed: 4
 
 
-2.Design
+##2.Design
 Utilized Object-oriented design to achieve the goal of easy maintaining and
 developing new features. Five classes are included, and each class has its
 own tester to make sure that they perform correctly. When encountered Invalid
@@ -60,7 +61,7 @@ Game2:
   to become version 2 game.
 
 
-3.Algorithm
+##3.Algorithm
 In the game version 2, path searching is implemented in the sense of
 backtracking algorithm, which is similar to DFS with some modification.
 In each step, it checks whether the agent satisfies the target direction and
