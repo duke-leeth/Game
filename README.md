@@ -1,7 +1,9 @@
+# Game Problem
 
-Game Problem
 Author: Tsunghan Lee
+
 Date: Apr 23 2017
+
 
 ## Command usage:
 Two methods are listed in the following.
