@@ -2,7 +2,7 @@ Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
 
-##1.Command usage:
+## 1.Command usage:
 Two methods are listed in the following.
 
   Method 1:
@@ -33,7 +33,7 @@ Two methods are listed in the following.
         ex. Maximum actions allowed: 4
 
 
-##2.Design
+## 2.Design
 Utilized Object-oriented design to achieve the goal of easy maintaining and
 developing new features. Five classes are included, and each class has its
 own tester to make sure that they perform correctly. When encountered Invalid
@@ -61,7 +61,7 @@ Game2:
   to become version 2 game.
 
 
-##3.Algorithm
+## 3.Algorithm
 In the game version 2, path searching is implemented in the sense of
 backtracking algorithm, which is similar to DFS with some modification.
 In each step, it checks whether the agent satisfies the target direction and
