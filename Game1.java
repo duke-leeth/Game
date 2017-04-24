@@ -1,4 +1,17 @@
+/**
+ * File: Game1.java
+ * Author: Tsunghan Lee
+ * Date: Apr 23 2017
+ *
+ * Extending Game class and add action-taking sequence method to form
+ * the version 1 game.
+ */
 
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class Game1 extends Game {
   private Agent agent = super.agent;
 

@@ -1,4 +1,17 @@
+/**
+ * File: Game.java
+ * Author: Tsunghan Lee
+ * Date: Apr 23 2017
+ *
+ * Store fundamental game information data, involving an agent, and methods to
+ * set initial condition, including location and direction faced.
+ */
 
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class Game {
   Agent agent = new Agent();
   int boundry = 0;

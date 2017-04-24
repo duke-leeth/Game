@@ -9,7 +9,7 @@ public class Game2Tester {
   static int[] initialLocation = {2, 3};
   static int[] targetLocation = {3, 4};
   static String initialDirection = "N";
-  static String targetDirection = "N";
+  static String targetDirection = "S";
 
   public static void main(String[] args) throws Exception {
     Game2 game = new Game2();

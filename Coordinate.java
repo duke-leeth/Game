@@ -1,6 +1,20 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * File: Coordinate.java
+ * Author: Tsunghan Lee
+ * Date: Apr 23 2017
+ *
+ * Store coordinate information (x,y) and corresponding operations,
+ * i.e. move one step toward each direction.
+ */
+
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class Coordinate{
   private int positionX = 0;
   private int positionY = 0;

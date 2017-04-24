@@ -1,6 +1,20 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * File: Game2.java
+ * Author: Tsunghan Lee
+ * Date: Apr 23 2017
+ *
+ * Extending Game class and add new feature to perform path searching in order
+ * to become version 2 game.
+ */
+
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class Game2 extends Game{
   private static final String[] actionOptionArray = {"M", "L", "R"};
   private ArrayList<String> record = new ArrayList<>();
@@ -14,7 +28,7 @@ public class Game2 extends Game{
   }
 
   public ArrayList<String> getSolution() {
-    this.exhaustedPermutation();
+    this.backtracking();
     return solution;
   }
 
@@ -39,7 +53,7 @@ public class Game2 extends Game{
     targetAgent.setDirection(targetDirection);
   }
 
-  public void exhaustedPermutation() {
+  public void backtracking() {
     int[] currLocation = agent.getLocationArrayFormat();
     String currDirection = agent.getDirection();
 
@@ -72,7 +86,7 @@ public class Game2 extends Game{
       }
 
       record.add(actionOptionArray[i]);
-      exhaustedPermutation();
+      backtracking();
 
       resetAgentToCurrentPosition(currLocation);
       resetAgentToCurrentDirection(currDirection);

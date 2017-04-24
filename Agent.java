@@ -1,5 +1,19 @@
 import java.lang.*;
 
+/**
+ * File: Agent.java
+ * Author: Tsunghan Lee
+ * Date: Apr 23 2017
+ *
+ * Store an agent's information (current coordinates) and actions,
+ * i.e. turn left, turn right, move one step forward.
+ */
+
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class Agent{
   private Coordinate location = new Coordinate(0, 0);
   private String direction = "N";

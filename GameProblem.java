@@ -2,6 +2,28 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
+/**
+ * File: GameProblem.java
+ * Date: Apr 23 2017
+ *
+ * The purpose is to solve the two version of the game problem.
+ * Usage command:
+ *  Compile:
+ *    javac GameProblem.java
+ *
+ *  Execute:
+ *    java GameProblem <option>
+ *
+ *    <option>  1 : for game version 1
+ *              2 : for game version 2
+ *
+ */
+
+
+/**
+ * @author Tsunghan Lee
+ *
+ */
 public class GameProblem {
   static int boundry = 8;
 
@@ -23,6 +45,7 @@ public class GameProblem {
       }
     } catch(Exception ex) {
       System.out.println(ex);
+      System.out.println("Please use valid input and try again.");
     }
 
   }
@@ -41,14 +64,14 @@ public class GameProblem {
                         + " L: Turn left \n"
                         + " R: Turn right \n");
 
-    System.out.print("Location: (Format:[<x>,<y>]): ");
+    System.out.print("Location: (Format:[<x>,<y>] Note:no space in between): ");
     game.setInitialLocation( parseLocation( commandReader.nextLine() ) );
 
     System.out.print("Direction faced: (Format:<N> or <S> or <E> or <W>): ");
     game.setInitialDirection( commandReader.nextLine() );
 
 
-    System.out.print("Actions: (Format: <M>,<L>,<R>): ");
+    System.out.print("Actions: (Format: <M>,<L>,<R> Note:no space in between): ");
     game.executeActionSequence( commandReader.nextLine() );
 
     System.out.println("");
@@ -73,14 +96,16 @@ public class GameProblem {
                       + " L: Turn left \n"
                       + " R: Turn right \n");
 
-    System.out.print("Original Location: (Format:[<x>,<y>]): ");
+    System.out.print("Original Location:"
+                      + " (Format:[<x>,<y>] Note:no space in between): ");
     game.setInitialLocation( parseLocation( commandReader.nextLine() ) );
 
     System.out.print("Original Direction faced: "
                       + "(Format:<N> or <S> or <E> or <W>): ");
     game.setInitialDirection( commandReader.nextLine() );
 
-    System.out.print("Target Location: (Format:[<x>,<y>]): ");
+    System.out.print("Target Location:"
+                      + " (Format:[<x>,<y>] Note:no space in between): ");
     game.setTargetLocation( parseLocation( commandReader.nextLine() ) );
 
     System.out.print("Target Direction faced: "
@@ -93,10 +118,12 @@ public class GameProblem {
     System.out.println("");
     System.out.println( "Output: ");
     System.out.println( "Possible solution: \n" );
-    System.out.println( "\t Running");
+    System.out.println( "\t ... Running ...");
+
     for (String sol : game.getSolution()) {
       System.out.println(sol);
-      }
+    }
+    System.out.println("No more possible actions!");
 
   }
 
