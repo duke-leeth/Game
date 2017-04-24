@@ -5,7 +5,7 @@ Date: Apr 23 2017
 ## 1.Command usage:
 Two methods are listed in the following.
 
-Method 1:
+Method 1
 Execute  execute .jar file:
   `java -jar GameProblem.jar <option>`
 
