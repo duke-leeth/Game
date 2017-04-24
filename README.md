@@ -3,14 +3,14 @@ Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
 
-## 1.Command usage:
+### Command usage:
 Two methods are listed in the following.
 
-Method 1:
+## Method 1:
 Execute  execute .jar file:
   `java -jar GameProblem.jar <option>`
 
-Method 2:
+## Method 2:
 Compile:
   `javac GameProblem.java`
 
@@ -34,35 +34,35 @@ Maximum actions allowed Format: (Note: Integer only)
   ex. Maximum actions allowed: 4
 
 
-## 2.Design
+### Design
 Utilized Object-oriented design to achieve the goal of easy maintaining and
 developing new features. Five classes are included, and each class has its
 own tester to make sure that they perform correctly. When encountered Invalid
 input, such as illegal location, exceptions are handled. Class are listed in
 the following.
 
-Coordinate:
+* Coordinate:
 Store coordinate information (x,y) and corresponding operations,
 i.e. move one step toward each direction.
 
-Agent:
+* Agent:
 Store an agent's information (current coordinates) and actions,
 i.e. turn left, turn right, move one step forward.
 
-Game:
+* Game:
 Basic game information data, involving an agent, and methods to
 set initial condition, including location and direction faced.
 
-Game1:
+* Game1:
 Extending Game class and add action-taking sequence method to form
 the version 1 game.
 
-Game2:
+* Game2:
 Extending Game class and add new feature to perform path searching in order
 to become version 2 game.
 
 
-## 3.Algorithm
+### Algorithm
 In the game version 2, path searching is implemented in the sense of
 backtracking algorithm, which is similar to DFS with some modification.
 In each step, it checks whether the agent satisfies the target direction and
