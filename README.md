@@ -1,4 +1,4 @@
-# Game Problem
+# Robot Game Problem
 
 Author: Tsunghan Lee
 
