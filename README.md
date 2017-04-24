@@ -1,3 +1,5 @@
+<snippet>
+  <content><![CDATA[
 Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
@@ -5,7 +7,7 @@ Date: Apr 23 2017
 ## 1.Command usage:
 Two methods are listed in the following.
 
-Method 1
+Method 1:
 Execute  execute .jar file:
   `java -jar GameProblem.jar <option>`
 
@@ -70,3 +72,7 @@ solution ArrayList. If not and doesn't reach the maximum actions allowed, it
 recursively do the searching. In the last case, the agent doesn't satisfy
 the targeting condition but reaches the maximum actions allowed, it remove
 the last step in the path, and return.
+
+]]></content>
+  <tabTrigger>readme</tabTrigger>
+</snippet>
