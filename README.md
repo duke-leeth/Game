@@ -26,7 +26,10 @@ Execute method 2:
 ```
 <option>  1 : for game version 1
           2 : for game version 2
+```
 
+### Game Running Format:
+```
 Location Format: [<x>,<y>] (Note:no space in between)
   ex. Location: [2,3]
 
