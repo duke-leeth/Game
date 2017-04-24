@@ -8,16 +8,16 @@ Two methods are listed in the following.
 
 ### Method 1:
 Execute  execute .jar file:
-  `java -jar GameProblem.jar <option>`
+`java -jar GameProblem.jar <option>`
 
 ### Method 2:
 Compile:
-  `javac GameProblem.java`
+`javac GameProblem.java`
 
 Execute method 2:
-  `java GameProblem <option>`
+`java GameProblem <option>`
 
-###Command arguments:
+### Command arguments:
 ```
 <option>  1 : for game version 1
           2 : for game version 2
