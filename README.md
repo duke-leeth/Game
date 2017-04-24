@@ -3,21 +3,22 @@ Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
 
-### Command usage:
+## Command usage:
 Two methods are listed in the following.
 
-## Method 1:
+### Method 1:
 Execute  execute .jar file:
   `java -jar GameProblem.jar <option>`
 
-## Method 2:
+### Method 2:
 Compile:
   `javac GameProblem.java`
 
 Execute method 2:
   `java GameProblem <option>`
 
-Command arguments:
+###Command arguments:
+```
 <option>  1 : for game version 1
           2 : for game version 2
 
@@ -32,9 +33,9 @@ Actions Format: <M>,<L>,<R> (Note:no space in between):
 
 Maximum actions allowed Format: (Note: Integer only)
   ex. Maximum actions allowed: 4
+```
 
-
-### Design
+## Design
 Utilized Object-oriented design to achieve the goal of easy maintaining and
 developing new features. Five classes are included, and each class has its
 own tester to make sure that they perform correctly. When encountered Invalid
@@ -62,7 +63,7 @@ Extending Game class and add new feature to perform path searching in order
 to become version 2 game.
 
 
-### Algorithm
+## Algorithm
 In the game version 2, path searching is implemented in the sense of
 backtracking algorithm, which is similar to DFS with some modification.
 In each step, it checks whether the agent satisfies the target direction and
