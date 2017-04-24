@@ -8,13 +8,16 @@ Two methods are listed in the following.
 
 ### Method 1:
 Execute  execute .jar file:
+
 `java -jar GameProblem.jar <option>`
 
 ### Method 2:
 Compile:
+
 `javac GameProblem.java`
 
 Execute method 2:
+
 `java GameProblem <option>`
 
 ### Command arguments:
@@ -43,22 +46,27 @@ input, such as illegal location, exceptions are handled. Class are listed in
 the following.
 
 * Coordinate:
+
 Store coordinate information (x,y) and corresponding operations,
 i.e. move one step toward each direction.
 
 * Agent:
+
 Store an agent's information (current coordinates) and actions,
 i.e. turn left, turn right, move one step forward.
 
 * Game:
+
 Basic game information data, involving an agent, and methods to
 set initial condition, including location and direction faced.
 
 * Game1:
+
 Extending Game class and add action-taking sequence method to form
 the version 1 game.
 
 * Game2:
+
 Extending Game class and add new feature to perform path searching in order
 to become version 2 game.
 
