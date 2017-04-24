@@ -1,5 +1,4 @@
-<snippet>
-  <content><![CDATA[
+
 Game Problem
 Author: Tsunghan Lee
 Date: Apr 23 2017
@@ -72,7 +71,3 @@ solution ArrayList. If not and doesn't reach the maximum actions allowed, it
 recursively do the searching. In the last case, the agent doesn't satisfy
 the targeting condition but reaches the maximum actions allowed, it remove
 the last step in the path, and return.
-
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
